@@ -1,0 +1,76 @@
+body {
+    font-family: 'Comic Sans MS', cursive, sans-serif; /* Font yang lebih ceria */
+    background-color: #ffeb3b; /* Latar belakang kuning cerah */
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    background: white;
+    border-radius: 15px; /* Sudut yang lebih bulat */
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    text-align: center; /* Rata tengah */
+}
+
+h1 {
+    color: #ff5722; /* Warna judul cerah */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+button {
+    display: block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 10px; /* Sudut yang lebih bulat */
+    background-color: #4caf50; /* Warna hijau cerah */
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s; /* Efek transisi */
+}
+
+button:hover {
+    background-color: #388e3c; /* Warna hijau lebih gelap saat hover */
+    transform: scale(1.05); /* Efek zoom saat hover */
+}
+
+.option {
+    padding: 10px;
+    margin: 20px auto;
+    background-color: #2196f3; /* Warna biru cerah */
+    border-radius: 10px; /* Sudut yang lebih bulat */
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s; /* Efek transisi */
+}
+
+.option:hover {
+    background-color: #1976d2; /* Warna biru lebih gelap saat hover */
+}
+
+.hidden {
+    display: none;
+}
+
+#result {
+    background-color: #ffeb3b; /* Latar belakang kuning cerah untuk hasil */
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+
+.option.fade-in {
+    animation: fadeIn 0.5s ease-in;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
