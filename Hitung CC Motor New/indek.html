@@ -1,0 +1,32 @@
+<html lang="id">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>CC Kalkulator</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div class="container">
+            <h2>Kalkulator CC Motor</h2>
+            <label for="diameter">Diameter Piston (mm):</label>
+            <input type="number" id="diameter" placeholder="Masukkan Diameter Piston" required>
+
+            <label for="langkah">Langkah Piston (mm):</label>
+            <input type="number" id="langkah" placeholder="Masukkan Langkah Piston" required>
+
+            <label for="jumlahSilinder">Jumlah Silinder:</label>
+            <input type="number" id="jumlahSilinder" placeholder="Masukkan Jumlah Silinder" required>
+            
+            <button onclick="hitungCC()">Hitung CC</button>
+        </div>
+        
+        <div class="popup" id="popup">
+            <div class="popup-content">
+                <span class="close" onclick="tutupPopup()">&times;</span>
+                <h3>Hasil Kalkulasi:</h3>
+                <p id="hasil"></p>
+        </div>
+
+        <script src="script.js"></script>
+    </body>
+</html>
